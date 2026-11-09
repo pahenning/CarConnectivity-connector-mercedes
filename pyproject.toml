@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carconnectivity-connector-mercedes"
+version = "0.1.0a1"
+description = "Experimental read-only Mercedes-Benz connector for CarConnectivity"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE", "LICENSE.mbapi2020"]
+dependencies = ["carconnectivity>=0.11.6", "requests>=2.32,<3", "protobuf>=5.29,<7"]
+
+[project.entry-points."carconnectivity.connectors"]
+mercedes = "carconnectivity_connectors.mercedes.connector:Connector"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = true

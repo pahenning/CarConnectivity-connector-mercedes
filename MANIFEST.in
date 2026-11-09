@@ -1,0 +1,2 @@
+recursive-include src/carconnectivity_connectors/mercedes/proto *.py
+include LICENSE.mbapi2020

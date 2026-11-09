@@ -1,0 +1,25 @@
+# Python build products and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+build/
+dist/
+*.whl
+*.tar.gz
+
+# Local credentials and runtime data
+.env
+.env.*
+!.env.example
+.netrc
+*token-cache*
+carConnectivity.json
+carconnectivity.json
+
+# Tool/editor
+.idea/
+.vscode/
